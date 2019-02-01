@@ -25,7 +25,6 @@ public class ComputerPlayer extends PlayerImpl {
 			}
 		case 2:
 			if (getRerollsLeft() > 0 && chance < .8) {
-				rerollsLeft--;
 				return getRoundAction();
 			} else {
 				System.out.print("The computer, " + getName() + ", rolled a " + diceRoll + ". ");
